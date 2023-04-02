@@ -72,7 +72,7 @@
   }
   
   #hero {
-    background-image: url('https://picsum.photos/id/237/1920/1080');
+    background-image: url('https://www.leparisien.fr/resizer/mjLipmB9SBHEjUr9sU06bYBLXRM=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/DJN55OJRJRD7HC7KX67OPE6R5I.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -122,5 +122,31 @@
   
   form button[type="submit"]:hover {
     background-color: #003b5c;
+  }
+  
+
+  #countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  #countdown div {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  #countdown span {
+    display: block;
+    font-size: 50px;
+  }
+  
+  #countdown .smalltext {
+    font-size: 16px;
+    font-weight: normal;
   }
   
