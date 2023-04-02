@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<title>BordoLudik</title>
-
-    
+  <meta charset="UTF-8">
+  <title>BordoLudik - Festival de jeux de société à Bordeaux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-	<h1>BordoLudik</h1>
-	
-	<p>Le site de BordoLudik</p>
-	<p>Tout savoir sur BordoLudik</p>
-
+  <header>
+    <h1>BordoLudik</h1>
+    <nav>
+      <ul>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h2>Bienvenue à BordoLudik, le festival de jeux de société à Bordeaux !</h2>
+      <a href="#programme" class="cta">Découvrez le programme</a>
+    </section>
+    <section id="a-propos">
+      <h2>À propos de BordoLudik</h2>
+      <p>BordoLudik est un festival annuel de jeux de société qui se déroule à Bordeaux. L'événement est ouvert à tous les amateurs de jeux de société, qu'ils soient débutants ou expérimentés.</p>
+      <p>Le festival propose une large sélection de jeux de société modernes, ainsi que des événements spéciaux tels que des tournois, des conférences et des présentations de nouveaux jeux.</p>
+      <a href="#programme" class="cta">Découvrez le programme complet</a>
+    </section>
+    <section id="programme">
+      <h2>Programme de BordoLudik</h2>
+      <ul>
+        <li>10h-18h : Ouverture de la salle de jeux</li>
+        <li>11h-12h : Tournoi de Carcassonne</li>
+        <li>14h-15h : Présentation de nouveaux jeux</li>
+        <li>16h-18h : Conférence sur l'histoire des jeux de société</li>
+      </ul>
+      <a href="#contact" class="cta">Contactez-nous pour plus d'informations</a>
+    </section>
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <p>Pour toute question ou demande d'information sur le festival, n'hésitez pas à nous contacter par e-mail, téléphone ou en remplissant le formulaire ci-dessous :</p>
+      <form action="envoyer.php" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
 </body>
+</html>
